@@ -47,7 +47,7 @@ enum ResponseFields{
 @RestController
 public class Controller {
 	@PostMapping(value = "/assignRooms")
-	public ResponseEntity<String> setCode(@RequestBody String requestJsonBodyStr){
+	public ResponseEntity<String> assignRoomsMapping(@RequestBody String requestJsonBodyStr){
 		String errorStr = getErrorInputString(requestJsonBodyStr);
 		if(errorStr != null){
 			JSONObject badRequestBody = new JSONObject();
