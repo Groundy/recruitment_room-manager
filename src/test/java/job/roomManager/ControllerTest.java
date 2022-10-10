@@ -1,15 +1,9 @@
 package job.roomManager;
 
-import org.assertj.core.util.Arrays;
-import org.assertj.core.util.Lists;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.ResponseEntity;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class InfoFromResponse{
