@@ -10,3 +10,5 @@ example JSON:
     "EconomyRoomsNumber" : 3,
     "PremiumRoomsNumber" : 2
 }
+
+Preferred way to use API is using jar file in my other repo https://github.com/Groundy/roomManagerClient, which gives proper output and format json response to be more readable. Description how to use that jar file is in roomManagerClient readme file.
