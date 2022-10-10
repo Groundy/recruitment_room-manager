@@ -119,7 +119,8 @@ public class Controller {
 					rejectedPrices.put(currentPrice);
 			}
 			else{
-				if(premiumRoomAvailable)
+				boolean allEconomyRoomsWillBeOccupied = (i + 1) > economyRoomsNumber;
+				if(premiumRoomAvailable && allEconomyRoomsWillBeOccupied)
 					pricesForPremiumRooms.put(currentPrice);
 				else if(economyRoomAvailable)
 					pricesForEconomyRooms.put(currentPrice);

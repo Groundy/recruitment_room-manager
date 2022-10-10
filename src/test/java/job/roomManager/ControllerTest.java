@@ -20,7 +20,7 @@ class InfoFromResponse{
 
 class ControllerTest {
 	//In task description is said "how much money they will make in total".
-	// I assumed that I should test only amount sum from premium and economy rooms, not each of them separately.
+	// I assumed that I should test only amount of sum from premium and economy rooms, not each of them separately.
 
 	Controller controller = new Controller();
 
@@ -55,6 +55,7 @@ class ControllerTest {
 		assertEquals(6, data.occupiedRoomsPremium);
 		assertEquals(4, data.occupiedRoomsEconomy);
 	}
+
 	@Test
 	void thirdTaskFromPdf(){
 		InfoFromResponse data = getNeededDataFromServer(7,2);
@@ -62,6 +63,7 @@ class ControllerTest {
 		assertEquals(2, data.occupiedRoomsPremium);
 		assertEquals(4, data.occupiedRoomsEconomy);
 	}
+
 	@Test
 	void fourthTaskFromPdf(){
 		InfoFromResponse data = getNeededDataFromServer(1,7);
